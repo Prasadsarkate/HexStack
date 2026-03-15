@@ -101,7 +101,9 @@ export default function AdminUsersPage() {
                           <Trash2 className="w-4 h-4" />
                         </button>
                       ) : (
-                        <ShieldAlert className="w-4 h-4 text-muted-foreground/40" title="Admin Protected" />
+                        <span title="Admin Protected">
+                          <ShieldAlert className="w-4 h-4 text-muted-foreground/40" />
+                        </span>
                       )}
                     </div>
                   </td>
