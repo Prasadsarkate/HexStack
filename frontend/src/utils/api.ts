@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api/v1";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://hexstack-backend.vercel.app/api/v1";
 
 export const apiFetch = async (endpoint: string, options: RequestInit = {}) => {
   const token = typeof window !== "undefined" ? localStorage.getItem("hx_token") : null;
